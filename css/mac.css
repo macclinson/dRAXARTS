@@ -1,0 +1,310 @@
+.cl{
+	clear: both;
+	display: block;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+.block{
+	display: block;
+}
+#footer, #wrapper{
+	min-width: 1003px;
+}
+.slide-selector{
+	position: absolute;
+	left: 0;
+	bottom: 15px;
+	width: 100%;
+	text-align: center;
+}
+.slide-selector span{
+	height: 17px;
+	width: 17px;
+	display: inline-block;
+	cursor: pointer;
+	background-image: url(../images/slider-selector.png);
+	background-repeat: no-repeat;
+}
+.slide-selector span + span{
+	margin-left: 11px;
+}
+.active-slide-selected{
+	background-position: -24px 0;
+}
+.slide ul{
+	width: 100%;
+	height: 100%;
+}
+.slide ul li{
+	height: 100%;
+	display: none;
+	position: relative;
+}
+.active-slide{
+	display: block !important;
+}
+
+/**** Text boxes inside slides *****/
+.text-box{
+	padding: 20px;
+	position: absolute;
+    font-family: 'Gotham Rounded';
+	background-color: rgba(7, 8, 8, 0.8);
+	background-image: url(../images/text-box-bullet.png);
+	background-position: 20px center;
+	background-repeat: no-repeat;
+}
+.text-box p{
+	margin: 0 0 0 75px;
+	font-size: 24px;
+	color: #fbe8bf;
+	float: left;
+}
+
+/**** Controls the position of the text boxes in the slides *****/
+.slide-1 .text-box{
+	bottom: 30%;
+	left: 42%;
+	max-width: 636px;
+}
+
+.slide-2 .text-box{
+	bottom: 32%;
+	left: 45%;
+	max-height: 50px;
+}
+.slide-4 .text-box{
+	bottom: 9%;
+	left: 40%;
+	padding-left: 148px;
+	background-position: 120px center;
+}
+.slide-5 .text-box{
+	top: 24%;
+	left: 33%;
+}
+.slide-6 .text-box{
+	top: 21%;
+	right: 49%;
+}
+.slide-7 .text-box{
+	top: 44%;
+	right: 43.9%;
+}
+
+/**** start of Footer *****/
+#footer{
+	background: #8f0100 url(../images/footer-bckgrd.jpg) repeat-x;
+}
+
+/*** Footer logo section *****/
+#footer-logo{
+	width: 290px;
+	float: left;
+	border-right: dotted 1px #954D4D;
+	padding: 50px 0 25px 0;
+}
+#footer-logo a{
+	float: left;
+	margin-left: 25px;
+}
+#footer-logo div{
+	float: left;
+	color: #b48b8b;
+	max-width: 163px;
+	max-height:125px;
+}
+#footer-logo div h4{
+	margin: 0;
+	font-size: 14px;
+	font-weight: normal;
+	overflow: hidden;
+}
+#footer-logo div p{
+	font-size: 10px;
+	margin: 10px 0;
+}
+#footer-menu-section{
+	width: 706px;
+	float: left;
+    font-family: 'MyriadProReg';
+}
+
+/*** Footer Newsletter ****/
+#footer-newsletter form{
+	margin: 16px 6px 0 0;
+	float: right;
+}
+#footer-newsletter p{
+	font-size: 19px;
+	color: #bc8080;
+	text-indent: 13px;
+	float: left;
+}
+#email-box{
+	width: 269px;
+	height: 24px;
+	font-size: 13px;
+	color: #640000;
+	text-indent: 12px;
+	background: url(../images/email-box-bckgrd.jpg);
+	border: none;
+}
+#register-button{
+	height: 26px;
+	width: 111px;
+	background: #570000;
+	border: solid 1px #916262;
+	font-size: 15px;
+	color: #bc8080;
+	margin-left: 6px;
+}
+#footer-newsletter div{
+	float: left;
+}
+
+/**** Footer core services **/
+#footer-menu{
+	padding: 0;
+	margin:0;
+	list-style: none;
+	clear: both;
+}
+#footer-menu li{
+	height: 138px;
+	width: 140px;
+	float: left;
+	background: #bc8080;
+}
+#footer-menu li + li{
+	margin-left: 1px;
+}
+#footer-menu li span{
+	height: 27px;
+	float: left;
+	padding-top: 3px;
+	background-image: url(../images/footer-menu-icons.png);
+	background-repeat: no-repeat;
+}
+#footer-menu li a{
+	width: 100%;
+	height: 100%;
+	color: #640000;
+	font-size: 15px;
+	text-decoration: none;
+    font-family: "Helvetica Rounded Cond";
+}
+#footer-who-we-are{
+	width: 141px !important;
+}
+#footer-who-we-are span{
+	margin: 5px 0 0 23px;
+	text-indent: 22px;
+	background-position: -5px -5px;
+}
+#footer-what-we-do span{
+	margin: 7px 0 0 16px;
+	text-indent: 27px;
+	background-position: -4px -44px;
+}
+#footer-our-strategy{
+	width: 141px !important;
+}
+#footer-our-strategy span{
+	margin: 7px 0 0 12px;
+	text-indent: 28px;
+	background-position: -3px -82px;
+}
+#footer-drax-force span{
+	margin: 5px 0 0 21px;
+	text-indent: 30px;
+	height: 25px !important;
+	padding-top: 5px !important;
+	background-position: -2px -115px;
+}
+#footer-work-done span{
+	margin: 7px 0 0 24px;
+	text-indent: 29px;
+	background-position: -3px -157px;
+}
+
+/**** Contact details block *******/
+#footer-contact-us-block{
+	height: 55px;
+	border: dotted #954D4D;
+	border-width: 1px 0;
+	clear: both;
+	background: #640000;
+    font-family: 'MyriadProReg';
+}
+#contact-details{
+	width: 266px;
+	float: left;
+	padding: 5px 0 5px 25px;
+	border-right: dotted 1px #954D4D;
+}
+#contact-details p{
+	font-size: 12px;
+	color: #ccc;
+	margin: 0;
+}
+#contact-details p em{
+	font-style: normal;
+	font-size: 18px;
+}
+
+/**** Footer social icons ******/
+#footer-social-icons{
+	float: left;
+}
+#footer-social-icons p{
+	text-indent: 130px;
+	padding-right: 37px;
+	float: left;
+	font-size: 15px;
+	color: #ccc;
+	margin: 0;
+	line-height: 55px;
+	background: url(../images/gray-bullet.png) no-repeat right center;
+}
+#footer-social-icons ul{
+	float: left;
+	list-style: none;
+	margin:11px 0 0 40px;
+}
+#footer-social-icons ul li{
+	float: left;
+}
+#footer-social-icons ul li + li{
+	margin-left: 28px;
+}
+#footer-social-icons ul li a{
+	height: 35px;
+	width: 35px;
+	background-image: url(../images/social-icons.png);
+	background-repeat: no-repeat;
+}
+.twitter-icon{
+	background-position: 0 -45px;
+}
+.linked-in-icon{
+	background-position: -2px -89px;
+}
+.youtube-icon{
+	background-position: -2px -132px;
+}
+.blog-icon{
+	background-position: -3px -183px;
+	height: 37px !important;
+}
+
+/** Copyright section *****/
+.copyright{
+	font-size: 12px;
+	color: #bc8080;
+	display: block;
+	line-height: 30px;
+	text-align: center;
+}
