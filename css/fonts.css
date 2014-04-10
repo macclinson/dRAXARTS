@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'MyriadProReg';
+    src: url('../fonts/myriad-pro/myriadpro-regular_0-webfont.eot');
+    src: url('../fonts/myriad-pro/myriadpro-regular_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriad-pro/myriadpro-regular_0-webfont.woff') format('woff'),
+         url('../fonts/myriad-pro/myriadpro-regular_0-webfont.ttf') format('truetype'),
+         url('../fonts/myriad-pro/myriadpro-regular_0-webfont.svg#myriad_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Helvetica Rounded Cond';
+    src: url('../fonts/helvetica-rounded-cond/bold/helveticarounded-boldcond-webfont.eot');
+    src: url('../fonts/helvetica-rounded-cond/bold/helveticarounded-boldcond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helvetica-rounded-cond/bold/helveticarounded-boldcond-webfont.woff') format('woff'),
+         url('../fonts/helvetica-rounded-cond/bold/helveticarounded-boldcond-webfont.ttf') format('truetype'),
+         url('../fonts/helvetica-rounded-cond/bold/helveticarounded-boldcond-webfont.svg#_helveticarounded_boldcBdcond') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Rounded Cond';
+    src: url('../fonts/helvetica-rounded-cond/bold-oblique/helveticarounded-boldcondobl-webfont.eot');
+    src: url('../fonts/helvetica-rounded-cond/bold-oblique/helveticarounded-boldcondobl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helvetica-rounded-cond/bold-oblique/helveticarounded-boldcondobl-webfont.woff') format('woff'),
+         url('../fonts/helvetica-rounded-cond/bold-oblique/helveticarounded-boldcondobl-webfont.ttf') format('truetype'),
+         url('../fonts/helvetica-rounded-cond/bold-oblique/helveticarounded-boldcondobl-webfont.svg#_helveticarounded_boBdcondobl') format('svg');
+    font-weight: bold;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Helvetica Rounded LT Cond';
+    src: url('../fonts/helvetica-rounded-lt-cond/bold/helveticaroundedlt-boldcond-webfont.eot');
+    src: url('../fonts/helvetica-rounded-lt-cond/bold/helveticaroundedlt-boldcond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helvetica-rounded-lt-cond/bold/helveticaroundedlt-boldcond-webfont.woff') format('woff'),
+         url('../fonts/helvetica-rounded-lt-cond/bold/helveticaroundedlt-boldcond-webfont.ttf') format('truetype'),
+         url('../fonts/helvetica-rounded-lt-cond/bold/helveticaroundedlt-boldcond-webfont.svg#_helveticarounded_lt_boBdcond') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Rounded LT Cond';
+    src: url('helveticaroundedlt-boldcondobl-webfont.eot');
+    src: url('helveticaroundedlt-boldcondobl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('helveticaroundedlt-boldcondobl-webfont.woff') format('woff'),
+         url('helveticaroundedlt-boldcondobl-webfont.ttf') format('truetype'),
+         url('helveticaroundedlt-boldcondobl-webfont.svg#_helveticarounded_ltBdcondobl') format('svg');
+    font-weight: bold;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/gotham/bold/gotham-bold-webfont.eot');
+    src: url('../fonts/gotham/bold/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham/bold/gotham-bold-webfont.woff') format('woff'),
+         url('../fonts/gotham/bold/gotham-bold-webfont.ttf') format('truetype'),
+         url('../fonts/gotham/bold/gotham-bold-webfont.svg#gothmbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/gotham/book/gotham-book-webfont.eot');
+    src: url('../fonts/gotham/book/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham/book/gotham-book-webfont.woff') format('woff'),
+         url('../fonts/gotham/book/gotham-book-webfont.ttf') format('truetype'),
+         url('../fonts/gotham/book/gotham-book-webfont.svg#gothmbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/gotham/medium/gotham-medium-webfont.eot');
+    src: url('../fonts/gotham/medium/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham/medium/gotham-medium-webfont.woff') format('woff'),
+         url('../fonts/gotham/medium/gotham-medium-webfont.ttf') format('truetype'),
+         url('../fonts/gotham/medium/gotham-medium-webfont.svg#gothmmedium') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../fonts/gotham/rounded/bold/gothamrounded-bold-webfont.eot');
+    src: url('../fonts/gotham/rounded/bold/gothamrounded-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham/rounded/bold/gothamrounded-bold-webfont.woff') format('woff'),
+         url('../fonts/gotham/rounded/bold/gothamrounded-bold-webfont.ttf') format('truetype'),
+         url('../fonts/gotham/rounded/bold/gothamrounded-bold-webfont.svg#gothm_rounded_boldbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../fonts/gotham/rounded/light/gothamrounded-light-webfont.eot');
+    src: url('../fonts/gotham/rounded/light/gothamrounded-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham/rounded/light/gothamrounded-light-webfont.woff') format('woff'),
+         url('../fonts/gotham/rounded/light/gothamrounded-light-webfont.ttf') format('truetype'),
+         url('../fonts/gotham/rounded/light/gothamrounded-light-webfont.svg#gothm_rounded_lightlight') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../fonts/gotham/rounded/medium/gothamrounded-medium-webfont.eot');
+    src: url('../fonts/gotham/rounded/medium/gothamrounded-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham/rounded/medium/gothamrounded-medium-webfont.woff') format('woff'),
+         url('../fonts/gotham/rounded/medium/gothamrounded-medium-webfont.ttf') format('truetype'),
+         url('../fonts/gotham/rounded/medium/gothamrounded-medium-webfont.svg#gothm_rounded_mediummedium') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../fonts/gotham/rounded/mediumitalic/gothamrounded-mediumitalic-webfont.eot');
+    src: url('../fonts/gotham/rounded/mediumitalic/gothamrounded-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham/rounded/mediumitalic/gothamrounded-mediumitalic-webfont.woff') format('woff'),
+         url('../fonts/gotham/rounded/mediumitalic/gothamrounded-mediumitalic-webfont.ttf') format('truetype'),
+         url('../fonts/gotham/rounded/mediumitalic/gothamrounded-mediumitalic-webfont.svg#gothm_rounded_mediumMdIt') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../fonts/gotham/rounded/book/gothamrounded-book-webfont.eot');
+    src: url('../fonts/gotham/rounded/book/gothamrounded-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham/rounded/book/gothamrounded-book-webfont.woff') format('woff'),
+         url('../fonts/gotham/rounded/book/gothamrounded-book-webfont.ttf') format('truetype'),
+         url('../fonts/gotham/rounded/book/gothamrounded-book-webfont.svg#gothm_rounded_bookbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
