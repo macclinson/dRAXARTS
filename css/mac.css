@@ -20,18 +20,19 @@ ul{
 	text-align: center;
 }
 #slide-selector span{
-	height: 17px;
-	width: 17px;
+	height: 15px;
+	width: 15px;
 	display: inline-block;
 	cursor: pointer;
-	background-image: url(../images/slider-selector.png);
-	background-repeat: no-repeat;
+	background: #d7d7d7;
+    border-radius: 50%;
+    box-shadow: 0 0 4px #000;
 }
 #slide-selector span + span{
 	margin-left: 11px;
 }
-.active-slide-selected{
-	background-position: -24px 0;
+#slide-selector span.active-slide-selected{
+	background: #8d0000;
 }
 .slide ul{
 	width: 100%;
@@ -43,9 +44,6 @@ ul{
 	/*display: none;*/
 	position: relative;
     float: left;
-}
-.active-slide{
-	display: block !important;
 }
 
 /**** Text boxes inside slides *****/

@@ -19,8 +19,7 @@ jQuery (function () {
     setSlide(0);
     
     interval = setInterval(function () {
-        currentIndex += 1;
-        setSlide(currentIndex % lis.length);
+        setSlide((currentIndex + 1) % lis.length);
     }, slideDefaultInterval);
     
     selectorContainer.delegate('span', 'click', function () {
@@ -36,11 +35,12 @@ jQuery (function () {
         sliderUl.animate({left: left}, anim);
         selectors.removeClass('active-slide-selected');
         $(selectors[index]).addClass('active-slide-selected');
+        currentIndex = index;
     }
     
-    $(window).resize(function () {
+    $(window).resize(function (e) {
         // When window was resized, the lis are going to be resized too...
         // so we need to reprogram
-        setSlide(currentIndex);
+        setSlide(currentIndex % lis.length);
     });
 });
