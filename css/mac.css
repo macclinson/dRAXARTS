@@ -12,14 +12,14 @@ ul{
 #footer, #wrapper{
 	min-width: 1003px;
 }
-.slide-selector{
+#slide-selector{
 	position: absolute;
 	left: 0;
 	bottom: 15px;
 	width: 100%;
 	text-align: center;
 }
-.slide-selector span{
+#slide-selector span{
 	height: 17px;
 	width: 17px;
 	display: inline-block;
@@ -27,7 +27,7 @@ ul{
 	background-image: url(../images/slider-selector.png);
 	background-repeat: no-repeat;
 }
-.slide-selector span + span{
+#slide-selector span + span{
 	margin-left: 11px;
 }
 .active-slide-selected{
@@ -36,11 +36,13 @@ ul{
 .slide ul{
 	width: 100%;
 	height: 100%;
+    position: relative;
 }
 .slide ul li{
 	height: 100%;
-	display: none;
+	/*display: none;*/
 	position: relative;
+    float: left;
 }
 .active-slide{
 	display: block !important;
