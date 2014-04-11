@@ -9,41 +9,53 @@ ul{
 .block{
 	display: block;
 }
+.wrapper{
+    background:#999999;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 #footer, #wrapper{
 	min-width: 1003px;
 }
-#slide-selector{
+.slide-selector{
 	position: absolute;
 	left: 0;
 	bottom: 15px;
 	width: 100%;
 	text-align: center;
 }
-#slide-selector span{
-	height: 15px;
-	width: 15px;
+.slide-selector span{
+	height: 17px;
+	width: 17px;
 	display: inline-block;
 	cursor: pointer;
-	background: #d7d7d7;
-    border-radius: 50%;
-    box-shadow: 0 0 4px #000;
+	background-image: url(../images/slider-selector.png);
+	background-repeat: no-repeat;
 }
-#slide-selector span + span{
+.slide-selector span + span{
 	margin-left: 11px;
 }
-#slide-selector span.active-slide-selected{
-	background: #8d0000;
+.active-slide-selected{
+	background-position: -24px 0;
 }
-.slide ul{
+.slide>ul{
 	width: 100%;
 	height: 100%;
-    position: relative;
 }
-.slide ul li{
+.slide>ul li{
 	height: 100%;
-	/*display: none;*/
+	display: none;
 	position: relative;
-    float: left;
+}
+.slide img{
+	display: block;
+}
+.active-slide{
+	display: block !important;
 }
 
 /**** Text boxes inside slides *****/
@@ -307,4 +319,749 @@ ul{
 	display: block;
 	line-height: 30px;
 	text-align: center;
+}
+
+/*********** Inner pages ****************/
+.unposition #wrapper,
+.unposition .slide,
+.unposition #footer{
+	position: relative !important;
+	bottom: 0 !important;
+}
+.unposition #wrapper{
+	margin-top: -80px;
+}
+.submenu{
+	width: 1003px;
+	background: #fff;
+	position: absolute;
+	z-index: -1;
+	top: 59px;
+	padding-bottom: 1px;
+}
+.breadcrumb{
+	float: left;
+}
+.breadcrumb a,
+.breadcrumb p{
+	margin: 0;
+	text-decoration: none;
+	color: #848484;
+	font-size: 24px;
+	padding-top: 13px;
+    font-family: 'Gotham Rounded';
+	font-weight: 200;
+	text-transform: uppercase;
+}
+.breadcrumb p img{
+	position: relative;
+	top: 5px;
+}
+.double-red-bullet{
+	display: inline-block;
+	margin: 0 8px 0 21px;
+	width: 12px;
+	height: 14px;
+	background: url(../images/double-red-arrow.png) no-repeat;
+}
+.single-red-bullet{
+	display: inline-block;
+	margin: 0 8px;
+	width: 8px;
+	height: 14px;
+	background: url(../images/single-red-arrow.png) no-repeat;
+}
+.breadcrumb p em{
+	font-style: normal;
+	color: #393939;
+}
+.search-box{
+	width: 296px;
+	float: right;
+	height: 39px;
+	margin: 10px 10px 0 0;
+}
+.search-box input{
+	border: none;
+	padding: 0;
+}
+.search-box input[type=search]{
+	width: 256px;
+	height: 100%;
+	float: left;
+	background: #e0e0e0;
+	text-indent: 19px;
+	color: #a4a4a4;
+	font-size: 15px;
+}
+.search-box input[type=submit]{
+	width: 39px;
+	height: 100%;
+	text-indent: -999999px;
+	background: #780000 url(../images/search-lens.png) no-repeat center center;
+}
+.submenu>ul{
+	width: 100%;
+	height: 56px;
+	padding: 0;
+	margin: 0;
+	clear: both;
+	list-style: none;
+	border-top: solid 1px #f1ce30;
+}
+
+.submenu > div {
+    padding-bottom: 11px;
+}
+.submenu>ul li{
+	float: left;
+	height: 100%;
+	width: 142px;
+	background-image: url(../images/submenu-links.png);
+	background-repeat: no-repeat;
+}
+.submenu>ul li + li{
+	border-left: solid 1px #f1ce30;
+}
+.submenu>ul li a{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	display: none;
+	text-indent: -999998px;
+}
+.active-submenu,
+.submenu>ul li:hover a{
+	text-indent: 0px !important;
+	display: block !important;
+	text-align: center;
+	background: #5f5f5f;
+	color: #fff !important;
+	text-decoration: none;
+	font-size: 21px;
+    font-family: 'MyriadProReg';
+	line-height: 56px;
+}
+
+.advertising-submenu{
+	background-position: -589px center;
+}
+.branding-submenu{
+	background-position: -6px center;
+}
+.packaging-submenu{
+	background-position: -158px center;
+}
+.designing-submenu{
+	background-position: -302px center;
+}
+.presenting-submenu{
+	background-position: -445px center;
+}
+.web-marketing-submenu{
+	width: 150px !important;
+	background-position: -728px center;
+}
+.training-submenu{
+	width: 135px !important;
+	background-position: -880px center;
+}
+
+/********** What we do *********/
+.what-we-do-index .slide section p{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    font-family: 'Gotham';
+	font-size: 20px;
+	margin: 0;
+}
+.what-we-do-index .slide section p span{
+	display: block;
+}
+.what-we-do-index .row-1 p{
+	text-align: center;
+	bottom: 263px !important;
+	color: #000;
+}
+.what-we-do-index .row-2 p{
+	top: 144px !important;
+	left: 497px !important;
+	color: #fff;
+}
+.what-we-do-index .row-3>div{
+	width: 945px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	position: absolute;
+	padding: 47px 28px 0 29px;
+}
+.what-we-do-index .row-3 div h2{
+	margin: 0;
+	background: #fff;
+	color: #393939;
+    font-family: 'Gotham';
+	font-weight: 200;
+	font-size: 20px;
+	text-align: center;
+	padding: 21px 0 23px;
+}
+.what-we-do-index .row-3 div>div{
+	width: 100%;
+	margin-top: 18px;
+}
+.what-we-do-index .row-3 div>div ul{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	list-style: none;
+}
+.what-we-do-index .row-3 div>div ul + ul{
+	margin-top: 41px;
+}
+.what-we-do-index .row-3 div>div ul li{
+	float: left;
+	height: 212px;
+	width: 287px;
+}
+.what-we-do-index .row-3 div>div ul li a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.what-we-do-index .row-3 div>div ul li + li{
+	margin-left: 42px;
+}
+#branding{
+	background-image: url(../images/what-we-do/what-we-do-branding.jpg);
+}
+#packaging{
+	background-image: url(../images/what-we-do/what-we-do-packaging.jpg);
+}
+#designing{
+	background-image: url(../images/what-we-do/what-we-do-designing.jpg);
+}
+#presenting{
+	background-image: url(../images/what-we-do/what-we-do-presenting.jpg);
+}
+#advertising{
+	background-image: url(../images/what-we-do/what-we-do-advertising.jpg);
+}
+#web-marketing{
+	background-image: url(../images/what-we-do/what-we-do-marketing.jpg);
+}
+#training{
+	background-image: url(../images/what-we-do/what-we-do-training.jpg);
+}
+#training-link{
+	height: 212px;
+	width: 287px;
+	margin: 41px auto 0;
+}
+/******** Branding **********/
+.white-text-box{
+	margin: 0;
+	padding: 20px;
+	position: absolute;
+	color: #292929;
+	background: #fff;
+	font-size: 20px;
+    font-family: 'Gotham';
+}
+.white-text-box span{
+	display: block;
+}
+.branding .slide section{
+	position: relative;
+}
+.branding .row-1 .white-text-box{
+	bottom: 189px;
+	right: 527px;
+}
+.branding .row-2 .white-text-box{
+	top: 71px;
+	right: 491px;
+}
+.what-we-do-numbered-list{
+	width: 880px;
+	margin: 0 auto;
+	position: absolute;
+	left:0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding: 85px 0 0 123px;
+    font-family: 'Gotham';
+}
+.what-we-do-numbered-list>p{
+	margin: 0;
+	font-size: 28px;
+	color: #000;
+	text-shadow: 1px 1px #E09529;
+}
+.what-we-do-numbered-list>p span{
+	display: block;
+}
+.what-we-do-numbered-list>ul{
+	margin: 49px 0 0;
+	padding: 0;
+	list-style:  none;
+	width: 733px;
+}
+.what-we-do-numbered-list>ul li{
+	height: 75px;
+	font-size: 24px;
+	text-indent: 80px;
+	line-height: 75px;
+	text-transform: capitalize;
+	background: #fff url(../images/what-we-do/list-number-bckgrd.jpg) no-repeat left top;
+}
+.what-we-do-numbered-list>ul li span{
+	display: inline-block;
+	text-indent: 0;
+	float: left;
+	padding-left: 30px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 36px;
+	color: #fff;
+    font-family: 'Helvetica Rounded Cond';
+	font-weight: bold;
+}
+
+.what-we-do-numbered-list>ul li + li{
+	margin-top: 21px;
+}
+/****** Advertising Page ********/
+
+.advertising .row-1 .white-text-box{
+	top: 250px;
+	left: 501px;
+}
+.advertising .row-2 .white-text-box{
+	bottom: 192px;
+	left: 30%;
+}
+
+/****** Designing Page ********/
+
+.designing .row-1 .white-text-box{
+	bottom: 68px;
+	left: 30%;
+}
+
+/****** Packaging Page ********/
+.packaging .row-1 .white-text-box{
+	bottom: 190px;
+	left: 30%;
+}
+
+/****** Presenting Page ********/
+.presenting .row-1 .white-text-box{
+	top: 250px;
+	left: 501px;
+}
+
+/****** Presenting Page ********/
+.training .row-1 .white-text-box{
+	top: 250px;
+	left: 501px;
+}
+
+/****** Presenting Page ********/
+.web-marketing .row-1 .white-text-box{
+	bottom: 306px;
+	left: 460px;
+}
+.web-marketing .row-2 .white-text-box{
+	bottom: 146px;
+	right: 458px;
+}
+
+
+/*********** Who we are page **************/
+.who-we-are-wrapper .transparent-text-box,
+.who-we-are-wrapper .who-we-are-text-box{
+	font-size: 20px;
+	color: #393939;
+	margin: 0;
+	padding: 20px;
+	position: absolute;
+	font-size: 20px;
+    font-family: 'Gotham';
+}
+ span{
+	display: block;
+}
+.who-we-are-wrapper .transparent-text-box{
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #000;
+}
+.row-1 .who-we-are-text-box{
+	top:533px;
+	left: 780px;
+}
+.row-2 .who-we-are-text-box{
+	top: 140px;
+	left: 480px;
+}
+.row-3 .who-we-are-text-box{
+	top: 155px;
+	left: 705px;
+}
+.row-4 .who-we-are-text-box{
+	top: 313px;
+	left: 820px;
+}
+.row-5 .who-we-are-text-box{
+	bottom: 240px;
+	left: 663px;
+}
+.row-6 .who-we-are-text-box{
+	bottom: 457px;
+	left: 489px;
+}
+.row-7 .transparent-text-box{
+	bottom: 306px;
+	left: 579px;
+}
+.row-8 .who-we-are-text-box{
+	top: 313px;
+	left: 940px;
+}
+.who-we-are-wrapper .row-9 .transparent-text-box{
+	top: 133px;
+	left: 594px;
+}
+.who-we-are-wrapper .row-10 .transparent-text-box{
+	top: 102px;
+	left: 31%;
+}
+
+.who-we-are-wrapper .row-11 .transparent-text-box{
+	bottom: 111px;
+	left: 31%;
+}
+.who-we-are-wrapper .row-12>div{
+	position: absolute;
+	top: 260px;
+	left: 565px;
+	width: 440px;
+}
+.who-we-are-wrapper .row-12>div>h3{
+	margin: 0;
+	font-size: 36px;
+    font-family: 'Gotham';
+	font-weight: 200;
+	padding: 10px 0 10px 25px;
+	background: #780000;	
+	color: #fff;
+}
+.who-we-are-wrapper .row-12>div>p{
+	margin: 0;
+	padding: 25px;
+    font-family: 'Gotham';
+	font-weight: 200;
+	font-size: 28px;
+	color: #000;
+	background: #fff;
+}
+.who-we-are-wrapper .row-12>div>p span{
+	font-weight: 100;
+	display: block;
+}
+.who-we-are-wrapper .row-13>p{
+	margin: 0;
+	position: absolute;
+    font-family: 'Gotham';
+	font-size: 32px;
+	color: #000;
+	bottom: 168px;
+	left: 678px;
+}
+.who-we-are-wrapper .row-14>div{
+	width: 1173px;
+	margin: 0 auto;
+	padding-top: 27px;
+	position: absolute;
+	top: 0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+.who-we-are-wrapper .row-14>div>div{
+	width: 1003px;
+	margin: 0 0 0 38px;
+	float: left;
+}
+.who-we-are-wrapper .row-14>div>div h2{
+	text-align: center;
+	font-size: 32px;
+	color: #000;
+    font-family: 'Gotham Rounded';
+	font-weight: 200;
+	padding: 13px 0;
+	margin: 0;
+	background: #ebf1f8;
+}
+.who-we-are-wrapper .row-14>div>div h2 img{
+	position: relative;
+	top: 5px;
+	display: inline;
+}
+.carousel{
+	margin: 120px 0 0;
+	padding: 0;
+	list-style: none;
+}
+.carousel li{
+	float: left;
+	width: 327px;
+	height: 519px;
+	background: #fff;
+}
+.carousel li + li{
+	margin-left: 9px;
+}
+.who-we-are-wrapper .row-14>div a{
+	display: block;
+	height: 90px;
+	width: 45px;
+	margin-top: 392px;
+	background-image: url(../images/caroul-arrows.png);
+	background-repeat: no-repeat;
+}
+.who-we-are-wrapper .row-14>div a.prev-arrow{
+	background-position: 0 0;
+	float: left;
+}
+.who-we-are-wrapper .row-14>div a.next-arrow{
+	background-position: -53px 0;
+	float: right;
+}
+
+/************* Portfolio/Work done page ****************/
+.work-done .row-1 p{
+	top: 414px;
+	left: 914px;
+	color: #000;
+	font-size: 20px;
+	position: absolute;
+	font-family: 'Gotham';
+}
+.work-done .row-2>div{
+	width: 1000px;
+	margin: 0 auto;
+	position: absolute;
+	left:0;
+	bottom:0;
+	right: 0;
+	top: 0;
+}
+.work-done .row-2>div>p{
+	text-indent: 48px;
+	font-family: 'Gotham';
+	color: #fff;
+	font-size: 20px;
+	margin: 27px 0;
+}
+.work-done .row-2>div>div{
+	width: 806px;
+	margin: 0 auto;
+}
+.work-done .row-2>div>div ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+.work-done .row-2>div>div ul + ul{
+	margin-top: 15px;
+}
+.work-done .row-2>div>div ul li{
+	float: left;
+	width: 191px;
+	height: 131px;
+	background-image:url(../images/work-done/clients.jpg);
+	background-repeat: no-repeat;
+}
+.work-done .row-2>div>div ul li + li{
+	margin-left: 14px;
+}
+.etisalat{
+	background-position: -205px 0;
+}
+.b-and-o{
+	background-position: -410px 0;
+}
+.dangote-noddles{
+	background-position: -615px 0;
+}
+.unn{
+	background-position: 0 -144px;
+}
+.pharmcare{
+	background-position: -205px -144px;
+}
+.transcorp{
+	background-position: -410px -144px;
+}
+.dangote-pasta{
+	background-position: -615px -144px;
+}
+.tiger-brands{
+	background-position: 0 -289px;
+}
+.five-d{
+	background-position: -205px -289px;
+}
+.nexus{
+	background-position: -410px -289px;
+}
+.dangote-flour{
+	background-position: -615px -289px;
+}
+.packaging-solutions{
+	background-position: 0 -435px;
+}
+.musik-track{
+	background-position: -205px -435px;
+}
+.afri-wood{
+	background-position: -410px -435px;
+}
+.message-wise{
+	background-position: -615px -435px;
+}
+.red-button{
+	background-position: 0 -579px;
+}
+.movie-producers{
+	background-position: -205px -579px;
+}
+.dragnet{
+	background-position: -410px -579px;
+}
+.computer-dot-com{
+	background-position: -615px -579px;
+}
+.dominion-city{
+	background-position: 0 -724px;
+}
+.huawei{
+	background-position: -205px -724px;
+}
+.okey-bakassi{
+	background-position: -410px -724px;
+}
+.bubblex{
+	background-position: -615px -724px;
+}
+
+
+/*********** Our Strategy page ***********/
+.our-strategy-text-box{
+	color: #000;
+	position: absolute;
+	text-align: center;
+}
+.our-strategy-text-box h3{
+	font-family: 'Gotham Rounded';
+	font-weight: 200;
+	font-size: 28px;
+	margin:0 0 10px;
+}
+.our-strategy-text-box p{
+	font-family: 'Gotham';
+	font-size: 20px;
+	margin: 0;
+}
+.our-strategy-text-box p span{
+	display: block;
+}
+.our-strategy .row-1 .our-strategy-text-box{
+	bottom: 110px;
+	left: 478px;
+}
+.our-strategy .row-2 .our-strategy-text-box{
+	bottom: 124px;
+	left: 31%;
+}
+.our-strategy .row-3 .our-strategy-text-box{
+	bottom: 163px;
+	left: 31%;
+}
+.our-strategy .row-4 .our-strategy-text-box{
+	bottom: 93px;
+	left: 31%;
+}
+.our-strategy .row-5 .our-strategy-text-box{
+	bottom: 329px;
+	left: 31%;
+}
+.who-we-are-wrapper .breadcrumb p,
+.our-strategy .breadcrumb p,
+.drax-force .breadcrumb p{
+	color: #393939 !important;
+}
+.drax-force .breadcrumb em{
+	font-style: normal;
+	text-transform: lowercase !important;
+}
+.drax-force .row-1 p{
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Gotham';
+	margin:0;
+	position: absolute;
+	bottom: 133px;
+	left: 31%;
+}
+.drax-force .drax-force-text-box{
+	position: absolute;
+}
+.drax-force .drax-force-text-box h3{
+	font-size: 36px;
+	color: #780000;
+	margin: 0;
+	font-family: 'Gotham';
+	font-weight: 200;
+}
+.drax-force .drax-force-text-box b{
+	color: #000;
+	font-size: 24px;
+	font-family: 'Gotham';
+	font-weight: 200;
+}
+.drax-force .drax-force-text-box p{
+	font-size: 20px;
+	color: #000;
+	margin: 0;
+	font-family: 'Gotham';
+}
+.drax-force .row-2 .drax-force-text-box{
+	bottom: 104px;
+	left: 821px;
+}
+.drax-force .row-3 .drax-force-text-box{
+	bottom: 44px;
+	left: 900px;
+}
+.drax-force .row-4 .drax-force-text-box{
+	top: 167px;
+	left: 836px;
+}
+.drax-force .row-5 .drax-force-text-box{
+	top: 98px;
+	left: 832px;
+}
+.drax-force .row-6 .drax-force-text-box{
+	top: 45px;
+	left: 842px;
 }

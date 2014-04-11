@@ -19,7 +19,7 @@ body {
     margin: 20px auto 0;
 }
 
-#main-nav ul {
+#main-nav > ul {
     border: 2px solid #fff;
     height: 56px;
     background: #780000;
@@ -27,8 +27,7 @@ body {
     list-style: none;
     margin: 0;
 }
-
-#main-nav li {
+#main-nav > ul li {
     float: left;
     line-height: 56px;
     border-right: 1px solid #fff;
@@ -36,8 +35,7 @@ body {
     background: url('../images/nav-bar.png') no-repeat;
     text-indent: 49px;
 }
-
-#main-nav li a {
+#main-nav > ul li a {
     display: block;
     text-transform: uppercase;
     color: #fff;
@@ -47,43 +45,35 @@ body {
     font-family: "Helvetica Rounded Cond";
     font-weight: bold;
 }
-
-#main-nav li:last-child {
+#main-nav > ul li:last-child {
     border-right: none;
 }
-
 #main-nav #nav-who-we-are {
     width: 149px;
     background-position: 24px 14px;
 }
-
 #main-nav #nav-what-we-do {
     width: 151px;
     background-position: 20px -65px;
 }
-
 #main-nav #nav-our-strategy {
     width: 197px;
     background-position: 19px -144px;
     text-indent: 50px;
 }
-
 #main-nav #nav-drax-force {
     width: 193px;
     background-position: 65px -223px;
     text-indent: 97px;
 }
-
 #main-nav #nav-drax-force a {
     text-transform: none;
 }
-
 #main-nav #nav-work-done {
     width: 151px;
     background-position: 25px -302px;
     text-indent: 56px;
 }
-
 #main-nav #nav-contact-us {
     width: 152px;
     background-position: 21px -382px;
@@ -109,7 +99,6 @@ body {
     width: 100%;
     height: 100%;
     background: #290;
-    overflow: hidden;
 }
 
 

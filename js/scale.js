@@ -6,8 +6,9 @@ jQuery(function ($) {
 });
 
 function resizeImages () {
+console.log('Resizing');
     var imgs = $('#home-slider img');
-    var win = $('#wrapper > .slide');
+    var win = $('#home-slider');
     var width = win.width();
     var height = win.height();
     
